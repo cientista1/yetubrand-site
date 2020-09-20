@@ -1,4 +1,7 @@
-:root {
+import { createGlobalStyle } from 'styled-components';
+
+const GlobalStyle = createGlobalStyle`
+ :root {
   --primary: #913D76;
   --secondary: #080F1C;
   --title-color : #913D76;
@@ -69,3 +72,6 @@ button.secondary-button:hover{
 *:focus {
   outline: 0 !important;
 }
+`;
+ 
+export default GlobalStyle;

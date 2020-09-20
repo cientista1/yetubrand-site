@@ -44,21 +44,19 @@ function Header() {
       document.documentElement.clientHeight;
 
     const scrolled = winScroll / height;
-    if (setJustMove) {
-      if (scrolled) setJustMove(true);
-      else setJustMove(false);
-    }
+    if (scrolled) setJustMove(true);
+    else setJustMove(false);
   }
 
   return (
     <Head justMove={justMove}>
-      <Menu justMove={justMove}> 
+      <Menu justMove={justMove}>
         <img className="logo" src="/static/images/logo.png" />
         <label htmlFor="toggle">
           <img src="/static/images/menu.png" />
         </label>
       </Menu>
-      <Nav className="nav" >
+      <Nav className="nav">
         <input type="checkbox" id="toggle"></input>
         {menu.map((item) => (
           <li key={item.href}>
@@ -74,9 +72,7 @@ function Header() {
             </Link>
           </li>
         ))}
-        <button className="btn primary-button">
-          Contratar
-        </button>
+        <button className="btn primary-button" onClick={()=>teste()}>Contratar</button>
       </Nav>
     </Head>
   );

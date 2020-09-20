@@ -2,15 +2,14 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   max-width: 100vw;
-  width: 100vw;
+  width: 98vw;
   display: flex;
   flex-direction: row;
   margin-top: 93px;
-  padding: 5rem 6rem;
+  padding: 5rem 4rem;
   justify-content: space-between;
   background-image: url("static/images/strategy-section-bg.png");
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-position: bottom right;
   background-size: 15rem 15rem;
 
