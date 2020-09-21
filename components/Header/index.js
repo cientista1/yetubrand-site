@@ -13,12 +13,9 @@ function Header() {
     },
     {
       title: "Preços",
-      href: "preços",
+      href: "pricings",
     },
-    {
-      title: "Clientes",
-      href: "clientes",
-    },
+    
     {
       title: "News",
       href: "news",
@@ -48,6 +45,10 @@ function Header() {
     else setJustMove(false);
   }
 
+  function click(){
+    document.getElementById("toggle").click();
+  }
+
   return (
     <Head justMove={justMove}>
       <Menu justMove={justMove}>
@@ -65,8 +66,9 @@ function Header() {
               to={item.href}
               spy={true}
               smooth={true}
-              offset={0}
+              offset={-50}
               duration={500}
+              onClick={()=> click()}
             >
               {item.title}
             </Link>

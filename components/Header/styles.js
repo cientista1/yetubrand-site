@@ -8,8 +8,9 @@ export const Head = styled.header`
   padding: 20px 100px;
   background: var(--background);
   position: fixed;
+  z-index: 1000;
   justify-content: center;
-  
+
   ${(props) =>
     props.justMove &&
     css`
@@ -82,10 +83,7 @@ export const Nav = styled.ul`
   input {
     display: none;
   }
-  #toggle:checked ~ li,
-  #toggle:checked ~ button {
-    display: block;
-  }
+
   li {
     padding: 10px 1.2rem;
   }
@@ -108,7 +106,10 @@ export const Nav = styled.ul`
   @media (max-width: 1048px) {
     flex-direction: column;
     text-align: center;
-
+    #toggle:checked ~ li,
+    #toggle:checked ~ button {
+      display: block;
+    }
     li,
     button {
       display: none;
@@ -121,7 +122,6 @@ export const Nav = styled.ul`
       justify-self: center;
       align-self: center;
       outline: none;
-     
     }
   }
 `;
