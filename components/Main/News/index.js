@@ -5,8 +5,8 @@ const news = [
   {
     source: "/static/images/blog-card-1.png",
     alt: "marketing digital",
-    title: "Remote Working",
-    desc: "Making it easier to connect with every client worldwi",
+    title: "Relatório de tráfego",
+    desc: "Saiba tudo sobre quem acessa seu site. Oferecemos um relatório detalhado de seus clientes.",
     sizes:{
       width: 14,
       height: 14,
@@ -15,8 +15,8 @@ const news = [
   {
     source: "/static/images/blog-card-2.png",
     alt: "Google Rankings",
-    title: "Google Rankings",
-    desc: "We've ranked number one on Google for multiple keywords. Read about our SEO strategies",
+    title: "Audiência",
+    desc: "Os nossos serviços de links patrocinados, ajudam a tua empresa a crescer rápidamente.",
     sizes:{
       width: 14,
       height: 14,
@@ -25,8 +25,8 @@ const news = [
   {
     source: "/static/images/blog-card-3.png",
     alt: "marketing digital",
-    title: "Communication",
-    desc: "We've made our client support services easy to access",
+    title: "Comunicação",
+    desc: "Nos comunicamos com os seus clientes sobre os seus produtos.",
     sizes:{
       width: 11,
       height: 14,
@@ -39,8 +39,8 @@ function News() {
     <Content className="news">
       <h1> News </h1>
       <p>
-        Nossos serviços são actualizados e oferece muitas novidades para seu
-        negócio, ajudamos a te guia para o lugar dos seus clientes.
+      A criação de conteúdos para os meios digitais visa agregar valor a marca para que ela tenha uma repercussão positiva entre seus clientes e a sociedade em geral sendo lembrada na hora da tomada de decisão.
+
       </p>
       <Behind>
         {news.map((new_item) => (

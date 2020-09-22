@@ -12,6 +12,8 @@ const GlobalStyle = createGlobalStyle`
   --button-secondary-color: #FF1919;
   --background: #f8f8f8;
   --color-white: #ffffff;
+  --background-footer: #303669;
+  --icon-color: #A4C4F3
 }
 
 *{

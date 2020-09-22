@@ -2,7 +2,6 @@ import styled, { css } from "styled-components";
 
 export const Head = styled.header`
   width: 100vw;
-  min-width: 100vw;
   display: flex;
   flex-direction: row;
   padding: 20px 100px;
@@ -15,7 +14,7 @@ export const Head = styled.header`
     props.justMove &&
     css`
       background: var(--color-white);
-      box-shadow: 10px 10px 20px #f1f1f1;
+      box-shadow: 2px 2px 2px #f1f1f1;
       padding: 10px 100px;
     `}
 
@@ -23,7 +22,7 @@ export const Head = styled.header`
     flex-direction: column;
     padding: 20px 80px;
     background: var(--color-white);
-    box-shadow: 10px 10px 20px #f1f1f1;
+    box-shadow: 2px 2px 2px #f1f1f1;
     padding: 10px 100px;
   }
 

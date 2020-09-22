@@ -5,6 +5,7 @@ export const Container = styled.div`
   background-repeat: no-repeat;
   background-size: 15rem 15rem;
   
+  
   @media (max-width: 1200px) {
     background-size: 10rem 10rem;
   }
@@ -16,7 +17,8 @@ export const Container = styled.div`
   }
 `;
 export const Content = styled.div`
-  max-width: 100vw;
+  max-width: 1380px;
+  margin: 0 auto;
   width: 98vw;
   display: flex;
   justify-content: space-between;

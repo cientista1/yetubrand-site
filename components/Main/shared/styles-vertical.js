@@ -15,11 +15,20 @@ export const Content = styled.div`
     color: var(--title-color);
     font-weight: 800;
   }
-  p {
+  p  {
     line-height: 1.5;
     margin: 20px 0;
     font-weight: 300;
     max-width: 768px;
+    
+  }
+  p:first-of-type {
+    padding: 1rem;
+  }
+  @media (max-width: 580px) {
+    h1 {
+      font-size: 2rem;
+    }
   }
 `;
 export const Behind = styled.aside`
