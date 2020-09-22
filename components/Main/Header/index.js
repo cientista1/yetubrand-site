@@ -25,6 +25,7 @@ function Header() {
        asideimagesizes={asideimagesizes}
        >
         <img
+           style={{ marginTop: '10px'}}
           className="aside-image"
           src="/static/images/header.png"
           alt="imagem impulsionamos négocios"

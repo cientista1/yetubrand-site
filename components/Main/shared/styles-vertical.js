@@ -26,7 +26,7 @@ export const Behind = styled.aside`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
-  padding: 0rem 4rem;
+  padding: 4rem 4rem 4rem 4rem;
   gap: 25px;
 
   @media (max-width: 991px){
@@ -42,7 +42,7 @@ export const Article = styled.article`
   background: var(--color-white);
   max-width: 320px;
   box-shadow: 2px 2px 10px #f5f5f5;
-  border-radius: 25px;
+  border-radius: 50px;
   padding: 2rem 2rem 0 2rem;
   cursor: pointer;
   transition: 0.2s;
@@ -89,3 +89,52 @@ export const Item = styled.div`
     width: 17px;
   }
 `;
+
+export const ShowCases = styled.section`
+
+`
+
+export const ItemShowCase = styled.article`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
+export const Title = styled.h2`
+  background: var(--primary);
+  padding: 10px 20px;
+  color: var(--color-white);
+  font-size: 16px;
+  border-radius: 10px;
+  width: 20rem;
+  margin: 2rem 0 0 0;
+`
+export const Image = styled.img`
+  width: 100%;
+
+`
+export const News = styled.article`
+  background: var(--color-white);
+  max-width: 320px;
+  box-shadow: 2px 2px 10px #f5f5f5;
+  border-radius: 50px;
+  padding: 2rem 2rem 4rem 2rem;
+  cursor: pointer;
+  transition: 0.2s;
+  position: relative;
+
+  img {
+    width: ${props => props.image_size.width}rem;
+    height: ${props => props.image_size.height}rem;
+  }
+
+  h4 {
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--title-color);
+  }
+ 
+  &:hover {
+    box-shadow: 0px -1px 60px -35px rgba(0, 0, 0, 0.75);
+  }
+
+`

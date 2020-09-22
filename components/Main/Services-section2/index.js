@@ -21,7 +21,10 @@ function Services2() {
       background_image={background_image}
       style={{ backgroundPosition: "bottom right" }}
     >
-      <Content asideimagesizes={asideimagesizes}>
+      <Content 
+      asideimagesizes={asideimagesizes}
+      className="services"
+      >
         <img
           className="aside-image"
           src="/static/images/services-sales-header.png"

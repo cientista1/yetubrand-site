@@ -97,7 +97,7 @@ export const Nav = styled.ul`
     transition: 0.5s all;
   }
 
-  li a:hover {
+  li a:hover, & li  .active {
     color: var(--text-active-color);
   }
   button {

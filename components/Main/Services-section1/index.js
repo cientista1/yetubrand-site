@@ -21,8 +21,9 @@ function Services() {
       <Content
         asideimagesizes={asideimagesizes}
         reverse={true}
+        className="services"
       >
-        <Aside  className="services">
+        <Aside>
           <h3>Our services</h3>
           <h1>Solving Problems </h1>
           <p>

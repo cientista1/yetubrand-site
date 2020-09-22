@@ -1,6 +1,8 @@
 import React from "react";
 import Contact from "./Contact";
 import Header from "./Header";
+import News from "./News";
+import Portfolio from "./Portfolio";
 import Pricing from "./Pricing";
 import Services1 from "./Services-section1";
 import Services2 from "./Services-section2";
@@ -16,6 +18,8 @@ function Main() {
       <Services1 />
       <Services2 />
       <Pricing />
+      <Portfolio />
+      <News />
       <Contact />
     </Container>
   );

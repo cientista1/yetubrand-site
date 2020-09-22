@@ -15,14 +15,17 @@ function Header() {
       title: "Preços",
       href: "pricings",
     },
-    
+    {
+      title: "Pórtfólio",
+      href: "portfolio",
+    },
     {
       title: "News",
       href: "news",
     },
     {
       title: "Contacto",
-      href: "contacto",
+      href: "contact",
     },
   ];
 

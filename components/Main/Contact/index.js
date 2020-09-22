@@ -15,13 +15,12 @@ function Contact() {
   }
 
 
-
   return (
     <Container
       background_image={background_image}
       style={{ backgroundPosition: "bottom  right -1000px"  }}
     >
-      <Content className="home" 
+      <Content className="contact" 
        asideimagesizes={asideimagesizes}
        reverse={true}
        >
