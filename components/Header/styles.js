@@ -33,6 +33,12 @@ export const Head = styled.header`
   @media (max-width: 380px) {
     flex-direction: column;
     padding: 10px 0px;
+    min-width: 100vw;
+  }
+  @media (max-width: 320px) {
+    flex-direction: column;
+    padding: 10px 0px;
+    width: 340px;
   }
 `;
 
@@ -89,7 +95,7 @@ export const Nav = styled.ul`
 
   li a {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     color: var(--text-color);
     cursor: pointer;

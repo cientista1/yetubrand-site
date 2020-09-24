@@ -17,7 +17,7 @@ export const Content = styled.div`
   }
   p  {
     line-height: 1.5;
-    margin: 20px 0;
+    margin: 10px 0;
     font-weight: 300;
     max-width: 768px;
     
@@ -27,7 +27,7 @@ export const Content = styled.div`
   }
   @media (max-width: 580px) {
     h1 {
-      font-size: 2rem;
+      font-size: 1.6rem;
     }
   }
 `;
@@ -35,7 +35,7 @@ export const Behind = styled.aside`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
-  padding: 4rem 4rem 4rem 4rem;
+  padding: 2rem 4rem 4rem 4rem;
   gap: 25px;
 
   @media (max-width: 991px){

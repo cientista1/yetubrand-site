@@ -1,7 +1,7 @@
 import React from "react";
 import Contact from "./Contact";
 import Header from "./Header";
-import News from "./News";
+import Advantage from "./Advantage";
 import Portfolio from "./Portfolio";
 import Pricing from "./Pricing";
 import Services1 from "./Services-section1";
@@ -19,7 +19,7 @@ function Main() {
       <Services2 />
       <Pricing />
       <Portfolio />
-      <News />
+      <Advantage />
       <Contact />
     </Container>
   );

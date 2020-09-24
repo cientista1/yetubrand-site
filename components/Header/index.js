@@ -1,31 +1,44 @@
 import React, { useState, useEffect } from "react";
 import { Head, Menu, Nav } from "./styles";
-import { Link, animateScroll as scroll } from "react-scroll";
+import {
+  Link,
+ 
+  animateScroll as scroll,
+
+} from "react-scroll";
+import { sendEmail } from "../utils/geral";
+
 function Header() {
   const menu = [
     {
-      title: "Home",
+      title: "Início",
       href: "home",
+      offset: -50,
     },
     {
       title: "Serviços",
       href: "services",
+      offset: -50,
     },
     {
-      title: "Preços",
+      title: "Soluções",
       href: "pricings",
+      offset: -25,
     },
     {
-      title: "Pórtfólio",
+      title: "Portfólio",
       href: "portfolio",
+      offset: -25,
     },
     {
-      title: "News",
-      href: "news",
+      title: "Vantagens",
+      href: "advantage",
+      offset: -25,
     },
     {
       title: "Contacto",
       href: "contact",
+      offset: -25,
     },
   ];
 
@@ -48,16 +61,30 @@ function Header() {
     else setJustMove(false);
   }
 
-  function click(){
+  function click() {
     document.getElementById("toggle").click();
   }
 
+  function ScrollTop() {
+    scroll.scrollToTop();
+  }
+
+  function email() {
+    var email = "geral@yetubrand.com";
+    var subject = "Contrato de serviço";
+    return sendEmail(email, subject, "");
+  }
+
   return (
-    <Head justMove={justMove}>
+    <Head justMove={justMove} data-aos="fade-up" data-aos-duration="1000">
       <Menu justMove={justMove}>
-        <img className="logo" src="/static/images/logo.png" />
+        <img
+          className="logo"
+          src="/static/images/yetubrand-logo.webp"
+          onClick={ScrollTop}
+        />
         <label htmlFor="toggle">
-          <img src="/static/images/menu.png" />
+          <img src="/static/images/menu.webp" />
         </label>
       </Menu>
       <Nav className="nav">
@@ -69,15 +96,17 @@ function Header() {
               to={item.href}
               spy={true}
               smooth={true}
-              offset={-50}
+              offset={item.offset}
               duration={500}
-              onClick={()=> click()}
+              onClick={() => click()}
             >
               {item.title}
             </Link>
           </li>
         ))}
-        <button className="btn primary-button" onClick={()=>teste()}>Contratar</button>
+        <a href={email()} target="_blank">
+          <button className="btn primary-button">Contratar</button>
+        </a>
       </Nav>
     </Head>
   );

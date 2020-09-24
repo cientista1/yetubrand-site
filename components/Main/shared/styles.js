@@ -82,7 +82,7 @@ export const Aside = styled.aside`
       font-size: 20px;
     }
     h1 {
-      font-size: 2rem;
+      font-size: 1.6rem;
     }
   }
 `;

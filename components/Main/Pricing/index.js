@@ -1,4 +1,5 @@
 import React from "react";
+import { sendEmail } from "../../utils/geral";
 import {
   Content,
   Behind,
@@ -9,7 +10,7 @@ import {
 
 const articles = [
   {
-    source: "/static/images/marketing.png",
+    source: "/static/images/marketing.webp",
     alt: "marketing digital",
     title: "Gestão de redes sociais",
     services: [
@@ -21,7 +22,7 @@ const articles = [
     ],
   },
   {
-    source: "/static/images/design.png",
+    source: "/static/images/design.webp",
     alt: "Design gráfico",
     title: "Design gráfico",
     services: [
@@ -30,7 +31,7 @@ const articles = [
     ],
   },
   {
-    source: "/static/images/sites.png",
+    source: "/static/images/sites.webp",
     alt: "Web sites",
     title: "Web sites",
     services: [
@@ -45,32 +46,47 @@ const articles = [
   },
 ];
 
+function email(service) {
+  var email = "geral@yetubrand.com";
+  var subject = "Contratar serviços da empresa.";
+  var message = `Estou interessado em contratar o pacote de ${service} fornecido pela yetubrand. <br> <br>Espero o devido atendimento.`;
+  return sendEmail(email, subject, message);
+}
+
 function Pricing() {
   return (
     <Content className="pricings">
-      <h1> Preço </h1>
+      <h1> Soluções </h1>
       <p>
-        Oferecemos serviço do tamanho do teu bolso, os nossos preços são de acordo com a necessidade do cliente.
+        Oferecemos serviço do tamanho do teu bolso, os nossos preços são de
+        acordo com a necessidade do cliente.
       </p>
-      <Behind>
+      <Behind name="prices">
         {articles.map((article) => (
-          <Article key={article.title}>
+          <Article
+            key={article.title}
+            data-aos="fade-out"
+            data-aos-duration="2000"
+            data-aos-anchor-placement="top-center"
+          >
             <img src={article.source} alt={article.alt} />
             <h4> {article.title}</h4>
             <Itens>
               {article.services.map((item) => (
-                <Item>
+                <Item key={item}>
                   <img
-                    src="/static/images/pricing-section-true.png"
+                    src="/static/images/pricing-section-true.webp"
                     alt="preços"
                   />
                   <span> {item}</span>
                 </Item>
               ))}
             </Itens>
-            <button type="button" className="btn primary-button">
-              Contratar
-            </button>
+            <a href={email(article.title)} target="_blank">
+              <button type="button" className="btn primary-button">
+                Contratar
+              </button>
+            </a>
           </Article>
         ))}
       </Behind>

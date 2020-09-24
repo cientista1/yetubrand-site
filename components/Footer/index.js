@@ -1,12 +1,11 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Container, Sections, Section, Reserved } from "./styles";
 
 function Footer() {
   return (
-    <Container>
+    <Container  name="footer">
       <Sections>
-        <img src="static/images/logo-white.png" alt="logo marka da yetubrand" />
+        <img src="static/images/logo-yetubrand-white.webp" alt="logo marka da yetubrand" />
         <Section>
           <h1>Sobre</h1>
           <p>

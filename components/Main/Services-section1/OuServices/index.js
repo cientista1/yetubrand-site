@@ -4,7 +4,8 @@ import { Section, Header, Paragraph } from "./styles";
 function OuServices({ info }) {
   const [visible, setVisible] = useState(false);
   return (
-    <Section>
+    <Section
+    >
       <Header onClick={() => setVisible(!visible)}>
         <span> {info.title} </span>
         <span> {visible ? "-" : "+"}</span>
@@ -12,7 +13,7 @@ function OuServices({ info }) {
       <Paragraph visible={visible}>
         <p>
           {info.paragraph.map((item) => (
-            <li>{item}</li>
+            <li key={item}>{item}</li>
           ))}
         </p>
       </Paragraph>

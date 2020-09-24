@@ -37,6 +37,7 @@ export const Paragraph = styled.div`
     font-size: 14px;
     opacity: 0;
     margin: 25px 10px;
+    text-align: left;
   }
 
   ${(props) =>
