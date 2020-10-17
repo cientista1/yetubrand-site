@@ -76,7 +76,7 @@ function Header() {
   }
 
   return (
-    <Head justMove={justMove} data-aos="fade-up" data-aos-duration="1000">
+    <Head justMove={justMove}>
       <Menu justMove={justMove}>
         <img
           className="logo"

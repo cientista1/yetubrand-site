@@ -118,7 +118,7 @@ export const Title = styled.h2`
   margin: 2rem 0 0 0;
 `
 export const Image = styled.img`
-  width: 100%;
+  width: 100vw;
 
 `
 export const News = styled.article`

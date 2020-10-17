@@ -34,10 +34,13 @@ export default class MyDocument extends Document {
             integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
             crossorigin="anonymous"
           />
+          {/* <link rel="icon" href="/static/images/logo.png"></link> */}
           <link
             href="https://unpkg.com/aos@2.3.1/dist/aos.css"
             rel="stylesheet"
           ></link>
+      
+
           <meta name="title" content="Yetubrand" />
           <meta
             name="description"
@@ -65,16 +68,13 @@ export default class MyDocument extends Document {
             property="og:image"
             content="https://yetubrand.com/static/images/logo-yetubrand-white.webp"
           />
-          <meta
-            property="og:url"
-            content="https://yetubrand.com/"
-          ></meta>
+          <meta property="og:url" content="https://yetubrand.com/"></meta>
 
           <title> Yetubrand </title>
         </Head>
 
         <body>
-          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+          <script async src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
           <Main />
           <NextScript />
         </body>

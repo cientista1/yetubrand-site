@@ -3,7 +3,7 @@ import { Container, Sections, Section, Reserved } from "./styles";
 
 function Footer() {
   return (
-    <Container  name="footer">
+    <Container name="footer">
       <Sections>
         <img src="static/images/logo-yetubrand-white.webp" alt="logo marka da yetubrand" />
         <Section>
@@ -16,25 +16,25 @@ function Footer() {
         <Section>
           <h1>Contactos </h1>
           <p className="item">
-            <i class="fas fa-map-marker-alt"></i>
+            <i className="fas fa-map-marker-alt"></i>
             <span>Rua Direita do Centro de Convenções Talatona, Angola</span>
           </p>
           <p className="item">
-            <i class="fas fa-phone-alt"></i>
+            <i className="fas fa-phone-alt"></i>
             <span>+244 992 747 709 / +244 944444242</span>
           </p>
           <p className="item">
-            <i class="fas fa-envelope"></i>
+            <i className="fas fa-envelope"></i>
             <span>geral@yetubrand.com</span>
           </p>
         </Section>
         <Section className="social-media">
           <h1>Mídias sociais </h1>
           <ul>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-linkedin-in"></i>
+            <i className="fab fa-twitter"></i>
+            <i className="fab fa-instagram"></i>
+            <i className="fab fa-facebook-f"></i>
+            <i className="fab fa-linkedin-in"></i>
           </ul>
         </Section>
       </Sections>

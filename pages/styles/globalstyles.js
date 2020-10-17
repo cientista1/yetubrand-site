@@ -1,6 +1,10 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
+
+
+
+
  :root {
   --primary: #913D76;
   --secondary: #080F1C;
